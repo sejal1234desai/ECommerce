@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .info-section {
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .info-section label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        .info-section span {
+            font-size: 16px;
+            color: #333;
+        }
+        .edit-link {
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .edit-link:hover {
+            text-decoration: underline;
+        }
+        /* Back button styles */
+.back-btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.back-btn i {
+    margin-right: 8px;
+}
+
+.back-btn:hover {
+    background-color: #e68a00;
+}
+    </style>
+</head>
+<body>
+    <a href="/" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Main Page
+    </a>
+    <div class="container">
+        <h1>Account Settings</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_first_name">First Name</label>
+                <input type="text" id="id_first_name" name="first_name" value="{{ user.first_name }}" required>
+            </div>
+            <div class="form-group">
+                <label for="id_last_name">Last Name</label>
+                <input type="text" id="id_last_name" name="last_name" value="{{ user.last_name }}" required>
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+
+        <div class="info-section">
+            <h2>Personal Information</h2>
+            <label>Email:</label>
+            <span>{{ user.email }}</span>
+            <br>
+            <label>Phone Number:</label>
+            <span>{{ profile.phone_number }}</span>
+            <br>
+            <a href="account/edit_personal_info" class="edit-link">Edit Personal Information</a>
+        </div>
+
+        <div class="info-section">
+            <h2>Address Information</h2>
+            <label>Address:</label>
+            <span>{{ profile.address }}</span>
+            <br>
+            <label>City:</label>
+            <span>{{ profile.city }}</span>
+            <br>
+            <label>State:</label>
+            <span>{{ profile.state }}</span>
+            <br>
+            <label>Zip Code:</label>
+            <span>{{ profile.zip_code }}</span>
+            <br>
+            <a href="account/edit_address_info" class="edit-link">Edit Address Information</a>
+        </div>
+    </div>
+  
+</body>
+</html>

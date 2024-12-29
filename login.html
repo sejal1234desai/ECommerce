@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/stylelogin.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <form method="POST">
+            {% csrf_token %}
+            <h1>Login</h1>
+            <div class="input-box">
+                <i class="bx bxs-user"></i>
+                <input type="text" placeholder="Username" name="username" required>
+            </div>
+            <div class="input-box">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <div class="remember-forget">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn">Continue</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="/register">Create your account</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

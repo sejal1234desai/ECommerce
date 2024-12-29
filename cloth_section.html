@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<style>footer{
+	margin-top: 15px;
+}
+.foot-panel1{
+	background-color: #37475a;
+	color: white;
+	height:50px;
+	display: flex;
+    justify-content: center;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    padding-top: 10px;
+	font-size: 1rem;
+
+}</style>
+
+<body>
+    <!-- Back Button -->
+    <a href="/" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Main Page
+    </a>
+
+    
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/account">Account</a>
+        <a href="#">Products</a>
+        <a href="#" onclick="showSection('all')">All</a>
+        <a href="#" onclick="showSection('female')">Female</a>
+        <a href="#" onclick="showSection('male')">Male</a>
+        <a href="/cart_section">Cart <i class="fa-solid fa-bag-shopping"></i><span id="cart-count"></span></a>
+    </div>
+
+    <div class="shop-section" id="productContainer">
+        <div class="box female" data-name="Women Viscose Rayon Kurta Dupatta Set" data-price="3999"
+        data-img="/static/img/cwomen11.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cwomen11.jpg');"></div>
+                <p>Women Viscose Rayon Kurta Dupatta Set </p>
+                <p class="price">3999</p>
+               
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart </button>
+            </div>
+        </div>
+        <div class="box female" data-name="Women Blue Kurta Pant Dupatta Set" data-price="3599"
+        data-img="/static/img/cwomen2.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cwomen2.jpg');"></div>
+                <p>Women Blue Kurta Pant Dupatta Set</p>
+                <p class="price">3599</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female"data-name="Women Cotton Blend Kurta Pant Dupatta Set" data-price="1299"
+        data-img="/static/img/cwomen3.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cwomen3.jpg');"></div>
+                <p>Women Cotton Blend Kurta Pant Dupatta Set</p>
+                <p class="price">1299</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female"data-name="Women Pure Cotton Kurta Pant Dupatta Set" data-price="7999"
+        data-img="/static/img/cwomen44.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cwomen44.jpg');"></div>
+                <p>Women Pure Cotton Kurta Pant Dupatta Set</p>
+                <p class="price">7999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female"data-name="Printed, Self Design, Embellished" data-price="5699"
+         data-img="/static/img/cwomen5.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cwomen5.jpg');"></div>
+                <p>Printed, Self Design, Embellished</p>
+                <p class="price">5,699</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female"data-name="Self Design Ikkat Organza, Jacquard Saree  (Dark Green)" data-price="3999"
+         data-img="/static/img/cwomen6.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cwomen6.jpg');"></div>
+                <p>Self Design Ikkat Organza, Jacquard Saree  (Dark Green)</p>
+                <p class="price">3,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female"data-name="Embroidered, Embellished Bollywood Georgette Saree(Gold)" data-price="1999"
+         data-img="/static/img/cwomen7.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cwomen7.jpg');"></div>
+                <p>Embroidered, Embellished Bollywood Georgette Saree(Gold)</p>
+                <p class="price">1,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female"data-name="Woven Paithani Cotton Silk Saree" data-price="6999"
+         data-img="/static/img/cwomen8.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cwomen8.jpg');"></div>
+                <p>Woven Paithani Cotton Silk Saree </p>
+                <p class="price">6,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box male"data-name="Men Regular Fit Solid Casual Shirt" data-price="1999"
+        data-img="/static/img/cmen.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cmen.jpg');"></div>
+                <p>Men Regular Fit Solid Casual Shirt</p>
+                <p class="price">1,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="Men Slim Fit Checkered Collar Casual Shirt" data-price="4899"
+        data-img="/static/img/cmen2.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cmen2.jpg');"></div>
+                <p>Men Slim Fit Checkered Collar Casual Shirt</p>
+                <p class="price">4899</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name=">Men Regular Fit Checkered Formal Shirt" data-price="2699"
+        data-img="/static/img/cmen5.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cmen5.jpg');"></div>
+                <p>Men Regular Fit Checkered Formal Shirt</p>
+                <p class="price">2699</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="Men Slim Fit Solid Spread Collar Formal Shirt" data-price="6999"
+        data-img="/static/img/cmen6.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cmen6.jpg');"></div>
+                <p>Men Slim Fit Solid Spread Collar Formal Shirt</p>
+                <p class="price">6999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="Men Relaxed Fit Mid Rise Blue Jeans" data-price="3459"
+        data-img="/static/img/cmen3.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cmen3.jpg');"></div>
+                <p>Men Relaxed Fit Mid Rise Blue Jeans</p>
+                <p class="price">3459</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="Men Jogger Fit Mid Rise Black Jeans" data-price="5999"
+        data-img="/static/img/cmen4.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cmen4.jpg');"></div>
+                <p>Men Jogger Fit Mid Rise Black Jeans</p>
+                <p class="price">5,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="Men Slim Mid Rise Blue Jeans" data-price="4599"
+        data-img="/static/img/cmen7.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cmen7.jpg');"></div>
+                <p>Men Slim Mid Rise Blue Jeans</p>
+                <p class="price">4599</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="Men Slim Mid Rise Black Jeans" data-price="4999"
+        data-img="/static/img/cmen8.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/cmen8.jpg');"></div>
+                <p>Men Slim Mid Rise Black Jeans</p>
+                <p class="price">4,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        function showSection(gender) {
+            const allBoxes = document.querySelectorAll('.box');
+            allBoxes.forEach(box => {
+                box.style.display = 'block';
+            });
+            if (gender !== 'all') {
+                allBoxes.forEach(box => {
+                    if (!box.classList.contains(gender)) {
+                        box.style.display = 'none';
+                    }
+                });
+            }
+        }
+
+        // Initial display setup
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('all');
+        });
+    </script> -->
+    <footer>
+        <div class="foot-panel1" id="back-to-top">
+                       Back to Top
+            </div>
+    </footer>
+
+    <script src="/static/js/cart.js"></script>
+   
+
+</body>
+</html>

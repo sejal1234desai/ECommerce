@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<style>footer{
+	margin-top: 15px;
+}
+.foot-panel1{
+	background-color: #37475a;
+	color: white;
+	height:50px;
+	display: flex;
+    justify-content: center;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    padding-top: 10px;
+	font-size: 1rem;
+
+}</style>
+
+<body>
+    <!-- Back Button -->
+    <a href="/" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Main Page
+    </a>
+
+    
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/account">Account</a>
+        <a href="#">Products</a>
+        <a href="/cart_section">Cart <i class="fa-solid fa-bag-shopping"></i><span id="cart-count"></span></a>
+       
+    </div>
+
+    <div class="shop-section">
+         <div class="box female" data-name=" Samsung Galaxy S23 Ultra 5G (Green, 12GB, 256GB Storage)" data-price="93,999"
+         data-img="/static/img/e1.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e1.jpg');"></div>
+                <p> Samsung Galaxy S23 Ultra 5G (Green, 12GB, 256GB Storage)</p>
+                <p class="price">93,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female" data-name="Oneplus Nord CE 3 5G (Grey Shimmer, 8GB RAM, 128GB Storage)" data-price="18,999"
+         data-img="/static/img/e2.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e2.jpg');"></div>
+                <p> Oneplus Nord CE 3 5G (Grey Shimmer, 8GB RAM, 128GB Storage)</p>
+                <p class="price">18,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female" data-name="Vivo Y200 5G Mobile (Jungle Green, 8GB RAM, 256GB Storage)" data-price="22999"
+        data-img="/static/img/e3.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e3.jpg');"></div>
+                <p>Vivo Y200 5G Mobile (Jungle Green, 8GB RAM, 256GB Storage) </p>
+                <p class="price">22,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female" data-name="iQOO Z9 5G (Graphene Blue, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box" data-price="24999"
+        data-img="/static/img/newe1.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/newe1.jpg');"></div>
+                <p>iQOO Z9 5G (Graphene Blue, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box</p>
+                <p class="price">24,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female" data-name="Xiaomi 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)" data-price="26,999"
+        data-img="/static/img/e5.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e5.jpg');"></div>
+                <p>Xiaomi 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black) </p>
+                <p class="price">26,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+       
+        <div class="box female" data-name="Samsung 80 cm (32 inches) HD Ready Smart LED TV UA32T4380AKXXL (Glossy Black)" data-price="14999"
+        data-img="/static/img/e6.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e6.jpg');"></div>
+                <p>Samsung 80 cm (32 inches) HD Ready Smart LED TV UA32T4380AKXXL (Glossy Black)</p>
+                <p class="price">14,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        
+         <div class="box female" data-name="Redmi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32R8-FVIN (Black)" data-price="17999"
+         data-img="/static/img/e7.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e7.jpg');"></div>
+                <p>Redmi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32R8-FVIN (Black)</p>
+                <p class="price">17,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female" data-name="Sony Bravia 139 cm (55 inches) 4K Ultra HD Smart LED Google TV KD-55X74L (Black)" data-price="58,499"
+         data-img="/static/img/e8.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e8.jpg');"></div>
+                <p>Sony Bravia 139 cm (55 inches) 4K Ultra HD Smart LED Google TV KD-55X74L (Black)</p>
+                <p class="price">58,499</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         
+        
+         <div class="box male" data-name="Apple Watch SE (2nd Gen) [GPS 44 mm] Smart Watch w/Starlight Aluminium Case & Starllight Sport Band. Fitness & Sleep Tracker, Crash Detection, Heart Rate Monitor," data-price="10999"
+         data-img="/static/img/e9.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e9.jpg');"></div>
+                <p>Apple Watch SE (2nd Gen) [GPS 44 mm] Smart Watch w/Starlight Aluminium Case & Starllight Sport Band. Fitness & Sleep Tracker, Crash Detection, Heart Rate Monitor, </p>
+                <p class="price">10,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="Amazfit Bip 5 Unity Smart Watch Fitness Activity Tracker with 11-Day Battery, 120+ Sports Modes, Bluetooth Phone Calling" data-price="7999"
+        data-img="/static/img/e10.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e10.jpg');"></div>
+                <p>Amazfit Bip 5 Unity Smart Watch Fitness Activity Tracker with 11-Day Battery, 120+ Sports Modes, Bluetooth Phone Calling</p>
+                <p class="price">7,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="Fire-Boltt Ninja Call Pro Plus 1.83 Smart Watch with Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution" data-price="1999"
+        data-img="/static/img/e11.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e11.jpg');"></div>
+                <p>Fire-Boltt Ninja Call Pro Plus 1.83 Smart Watch with Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution</p>
+                <p class="price">1,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="Noise Newly Launched Quad Call 1.81 Display, Bluetooth Calling Smart Watch, AI Voice Assistance, 160+Hrs Battery Life, Metallic Build, in-Built Games" data-price="2999"
+        data-img="/static/img/e12.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e12.jpg');"></div>
+                <p>Noise Newly Launched Quad Call 1.81 Display, Bluetooth Calling Smart Watch, AI Voice Assistance, 160+Hrs Battery Life, Metallic Build, in-Built Games</p>
+                <p class="price">2,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="box male"data-name="Samsung 183 L, 5 Star, Digital Inverter, Direct-Cool Single Door Refrigerator (RR20D2825HN/NL, Himalaya Poppy Red, Base Stand Drawer, 2024 Model)" data-price="12999"
+        data-img="/static/img/e13.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e13.jpg');"></div>
+                <p>Samsung 183 L, 5 Star, Digital Inverter, Direct-Cool Single Door Refrigerator (RR20D2825HN/NL, Himalaya Poppy Red, Base Stand Drawer, 2024 Model)</p>
+                <p class="price">12,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="Whirlpool 192 L 5 Star Icemagic Powercool Inverter Direct-Cool Single Door Refrigerator (215 IMPC ROY 5S Inv SAPPHIRE MULIA-Z, Base Stand with Drawer)" data-price="17899"
+        data-img="/static/img/e14.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e14.jpg');"></div>
+                <p>Whirlpool 192 L 5 Star Icemagic Powercool Inverter Direct-Cool Single Door Refrigerator (215 IMPC ROY 5S Inv SAPPHIRE MULIA-Z, Base Stand with Drawer)</p>
+                <p class="price">17,899</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="LG 242 L 3 Star Smart Inverter Frost-Free Double Door Refrigerator (GL-I292RPZX, Shiny Steel, Door Cooling+)" data-price="24,990"
+        data-img="/static/img/e15.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e15.jpg');"></div>
+                <p>LG 242 L 3 Star Smart Inverter Frost-Free Double Door Refrigerator (GL-I292RPZX, Shiny Steel, Door Cooling+)</p>
+                <p class="price">24,990</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="Samsung 236L 2 Star Inverter Frost-Free Double Door Refrigerator Appliance (RT28C3122CU/HL,Camellia Blue), Base Stand Drawer 2023 Model" data-price="27000"
+        data-img="/static/img/e16.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/e16.jpg');"></div>
+                <p>Samsung 236L 2 Star Inverter Frost-Free Double Door Refrigerator Appliance (RT28C3122CU/HL,Camellia Blue), Base Stand Drawer 2023 Model</p>
+                <p class="price">27,000</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+       
+    </div>
+    <footer>
+        <div class="foot-panel1" id="back-to-top">
+                       Back to Top
+            </div>
+    </footer>
+
+    <script src="/static/js/cart.js"></script>
+    
+
+
+</body>
+</html>

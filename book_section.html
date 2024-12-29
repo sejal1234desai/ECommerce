@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<style>footer{
+	margin-top: 15px;
+}
+.foot-panel1{
+	background-color: #37475a;
+	color: white;
+	height:50px;
+	display: flex;
+    justify-content: center;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    padding-top: 10px;
+	font-size: 1rem;
+
+}</style>
+
+
+<body>
+    <!-- Back Button -->
+    <a href="/" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Main Page
+    </a>
+
+
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/account">Account</a>
+        <a href="#">Products</a>
+        <a href="/cart_section">Cart <i class="fa-solid fa-bag-shopping"></i><span id="cart-count"></span></a>
+
+    </div>
+
+    <div class="shop-section">
+        <div class="box female" data-name="The Power of Your Subconscious Mind Paperback " data-price="1199"
+            data-img="/static/img/newb1.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/newb1.jpg');"></div>
+                <p>The Power of Your Subconscious Mind Paperback </p>
+                <p class="price">1199</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female" data-name="Global Health Studies: A Social Determinants Perspective" data-price="1299"
+            data-img="/static/img/book2.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/book2.jpg');"></div>
+                <p> Global Health Studies: A Social Determinants Perspective</p>
+                <p class="price">1,299</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female" data-name="Ice Burn Paperback  " data-price="2249" data-img="/static/img/newb4.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/newb4.jpg');"></div>
+                <p>Ice Burn Paperback </p>
+                <p class="price">2,249</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female" data-name="To Infinity and Beyond: A Journey of Cosmic Discovery" data-price="1259"
+            data-img="/static/img/book4.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/book4.jpg');"></div>
+                <p>To Infinity and Beyond: A Journey of Cosmic Discovery </p>
+                <p class="price">1,259</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female" data-name="La Passione: How Italy Seduced the World" data-price="699"
+            data-img="/static/img/book5.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/book5.jpg');"></div>
+                <p>La Passione: How Italy Seduced the World </p>
+                <p class="price">699</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box female" data-name="Lucknow, Uttar Pradesh: Including the Chattar Manzil, the Bara"
+            data-price="2099" data-img="/static/img/book6.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/book6.jpg');"></div>
+                <p>Lucknow, Uttar Pradesh: Including the Chattar Manzil, the Bara</p>
+                <p class="price">2,099</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box female" data-name="Power to the Princess: 15 Favourite Fairytales Retold with Girl Power"
+            data-price="1199" data-img="/static/img/book7.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/book7.jpg');"></div>
+                <p>Power to the Princess: 15 Favourite Fairytales Retold with Girl Power</p>
+                <p class="price">1,199</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female" data-name="Elliott Wave Principle hardcover book Hardcover " data-price="1399"
+            data-img="/static/img/newb3.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/newb3.jpg');"></div>
+                <p>Elliott Wave Principle hardcover book Hardcover </p>
+                <p class="price">1,399</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="foot-panel1" id="back-to-top">
+                       Back to Top
+            </div>
+    </footer>
+
+    <script src="/static/js/cart.js"></script>
+
+
+
+
+</body>
+
+</html>

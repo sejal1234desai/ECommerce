@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<style>footer{
+	margin-top: 15px;
+}
+.foot-panel1{
+	background-color: #37475a;
+	color: white;
+	height:50px;
+	display: flex;
+    justify-content: center;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    padding-top: 10px;
+	font-size: 1rem;
+
+}</style>
+
+<body>
+    <!-- Back Button -->
+    <a href="/" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Main Page
+    </a>
+
+    
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/account">Account</a>
+        <a href="#">Products</a>
+        <a href="/cart_section">Cart <i class="fa-solid fa-bag-shopping"></i><span id="cart-count"></span></a>
+       
+    </div>
+
+    <div class="shop-section" >
+    	<div class="box male"data-name="" data-price="349"
+        data-img="/static/img/p1.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p1.jpg');"></div>
+                <p>Purepet Cat Litter for All Cat Breed litter Lavender Fragrance - 5kg Pack Pet Litter Tray Refill
+3.9 out of 5 stars </p>
+                <p class="price">349</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="aumuca Self Cleaning Cat Brush & Dog Comb, Pet Grooming Shedding Brush - Effectively Removes Loose Undercoat, Slicker Brush for Dogs & Cats, Cat Comb" data-price="799"
+        data-img="/static/img/p2.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p2.jpg');"></div>
+                <p>aumuca Self Cleaning Cat Brush & Dog Comb, Pet Grooming Shedding Brush - Effectively Removes Loose Undercoat, Slicker Brush for Dogs & Cats, Cat Comb</p>
+                <p class="price">799</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="ZOIVANE Dog Trimmer | Dog Trimmer for Labrador, Shih Tzu, German Shepherd, and Golden Retriever, Pet" data-price="1999"
+        data-img="/static/img/p3.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p3.jpg');"></div>
+                <p>ZOIVANE Dog Trimmer | Dog Trimmer for Labrador, Shih Tzu, German Shepherd, and Golden Retriever, Pet</p>
+                <p class="price">1,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="cature Care by Nature 3 Levels Pet Cat Toy Funny Tower Tracks Disc Cat Tracks Toys Training Intelligence" data-price="499"
+        data-img="/static/img/p4.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p4.jpg');"></div>
+                <p>cature Care by Nature 3 Levels Pet Cat Toy Funny Tower Tracks Disc Cat Tracks Toys Training Intelligence</p>
+                <p class="price">499</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        
+         <div class="box female"data-name=" ZOIVANE Puppy Training Spray, Potty Training Spray for Puppy, Cat and Dog - 200ml" data-price="399"
+         data-img="/static/img/p5.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p5.jpg');"></div>
+                <p> ZOIVANE Puppy Training Spray, Potty Training Spray for Puppy, Cat and Dog - 200ml</p>
+                <p class="price">399</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female"data-name="Pets Empire Stainless Steel Dog Bowl, Dog Food Bowl, Dog Feeding Bowl, Medium (Set of 2 x 700ml)" data-price="251"
+         data-img="/static/img/p6.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p6.jpg');"></div>
+                <p> Pets Empire Stainless Steel Dog Bowl, Dog Food Bowl, Dog Feeding Bowl, Medium (Set of 2 x 700ml)</p>
+                <p class="price">251</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female"data-name="Foodie Puppies Dog Water Bottle, Leak Proof Portable Puppy Water Dispenser Drinking Feeder Pet Care Cup" data-price="199"
+        data-img="/static/img/p7.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p7.jpg');"></div>
+                <p>Foodie Puppies Dog Water Bottle, Leak Proof Portable Puppy Water Dispenser Drinking Feeder Pet Care Cup</p>
+                <p class="price">199</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female"data-name="Bscly 2-in-1 Moisturizing Paw Cream & Elbow Protector | 50g | for All Pets Care - Natural Cream, Wax, Balm for Healing" data-price="235"
+        data-img="/static/img/p8.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p8.jpg');"></div>
+                <p>Bscly 2-in-1 Moisturizing Paw Cream & Elbow Protector | 50g | for All Pets Care - Natural Cream, Wax, Balm for Healing</p>
+                <p class="price">235</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female"data-name="Neakasa by Neabot P0 Pro Dog Grooming Vacuum for Hair | 6.6lbs Lightweight Portable Dog Grooming Kit" data-price="7999"
+        data-img="/static/img/p9.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p9.jpg');"></div>
+                <p>Neakasa by Neabot P0 Pro Dog Grooming Vacuum for Hair | 6.6lbs Lightweight Portable Dog Grooming Kit </p>
+                <p class="price">7,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+       
+        <div class="box female"data-name="The Pets Company Pet Massage Rubber Bath Glove for Dogs, Cats, Rabbit, & Hamster | Grooming Shampo" data-price="110"
+        data-img="/static/img/p10.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p10.jpg');"></div>
+                <p>The Pets Company Pet Massage Rubber Bath Glove for Dogs, Cats, Rabbit, & Hamster | Grooming Shampo</p>
+                <p class="price">110</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        
+         <div class="box female"data-name="Meat Up Dry Adult Dry Dog Food, 1.2 kg (Buy 1 Get 1 Free), Total 2.4 Kg Pack" data-price="299"
+         data-img="/static/img/p11.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p11.jpg');"></div>
+                <p>Meat Up Dry Adult Dry Dog Food, 1.2 kg (Buy 1 Get 1 Free), Total 2.4 Kg Pack</p>
+                <p class="price">299</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female"data-name="Pedigree Adult Dry Dog Food, Meat & Rice, 1.2kg Pack" data-price="1499"
+         data-img="/static/img/p12.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/p12.jpg');"></div>
+                <p>Pedigree Adult Dry Dog Food, Meat & Rice, 1.2kg Pack</p>
+                <p class="price">1,499</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         
+        
+         
+       <!--  <div class="box male">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('f13.jpg');"></div>
+                <p>APRODZ Solid Wood Ekwok Study Desk Table for Home and Office</p>
+                <p class="price">10,999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('f14.jpg');"></div>
+                <p>Solid Sheesham Wood Rectangle Centre Table, Coffee Table for Living Room, Wooden Sofa Center Table with Shelf Storage for Home & Office | Size 18X18X34 inch (Coffee)</p>
+                <p class="price">7899</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('f15.jpg');"></div>
+                <p>Nilkamal Freedom Mini Medium (FMM) Plastic Cabinet for Storage| Space & Clothes Organizer| Shelves| Cupboard| Almari| Wardrobe| Living Room| Adult & Kids| Multipurpose for Home Kitchen & Office</p>
+                <p class="price">4990</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('f16.jpg');"></div>
+                <p>Furniture Cafe Wooden Wall Shelves | Corner Hanging Shelf for Living Room Stylish | Zig Zag Home Decor Floating Display Rack Storage Organizer Unique Design with Finish 5 Tiers (Brown Finish)</p>
+                <p class="price">3489</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        -->
+    </div>
+    <footer>
+        <div class="foot-panel1" id="back-to-top">
+                       Back to Top
+            </div>
+    </footer>
+
+    <script src="/static/js/cart.js"></script>
+
+</body>
+</html>

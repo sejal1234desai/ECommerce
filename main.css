@@ -1,0 +1,240 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/* Back button styles */
+.back-btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.back-btn i {
+    margin-right: 8px;
+}
+
+.back-btn:hover {
+    background-color: #e68a00;
+}
+
+
+        
+
+    /* Style the navbar */
+        .navbar {
+            background-color: #0f1111;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Style the navbar links */
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: block;
+            color:  #ff9900;
+        }
+
+        /* Style the label for radio buttons */
+        .gender-selection {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .gender-label {
+            display: inline-block;
+            cursor: pointer;
+            padding: 8px 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+            color: #555;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Style checked radio button label */
+        input[type="radio"]:checked + .gender-label {
+            background-color: #555;
+            color: white;
+            border-color: #555;
+        }
+
+ 
+
+
+        
+/*** Style the shop section container */
+.shop-section {
+    padding: 20px;
+    margin-top: 20px; /***** Add margin to avoid overlap with back button**** */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Style the boxes */
+.box {
+    background-color: white;
+    height: auto; /* Adjusted height for variable content */
+    width: calc(25% - 20px); /* Ensure 4 boxes per row with margin */
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Style the content inside each box */
+.box-content {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.box-img {
+    height: 300px;
+
+    background-size: cover;
+    background-position: center;
+    margin: 1rem 0;
+}
+
+.box-content p {
+    color: black;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Price style */
+.price {
+    color: #b12704;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-btn {
+    background-color: #ff9900;
+    color: white;
+}
+
+.cart-btn {
+    background-color: #555;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+.cart {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.cart h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+/* Inside the <style> tag or your CSS file */
+#cart-count {
+    background-color: #FF9900;
+    color: #FFFFFF;
+    border-radius: 50%;
+   padding: 4px 5px;
+    font-size: 14px;
+    position: relative;
+    top: -8px;
+    left: -2px;
+}
+
+.cart-total {
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.clear-cart-btn {
+    background-color: #ff9900;
+    color: white;
+    width: 100%;
+}
+
+.clear-cart-btn:hover {
+    background-color: #e68a00;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+}
+

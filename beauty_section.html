@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<style>footer{
+	margin-top: 15px;
+}
+.foot-panel1{
+	background-color: #37475a;
+	color: white;
+	height:50px;
+	display: flex;
+    justify-content: center;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    padding-top: 10px;
+	font-size: 1rem;
+
+}</style>
+
+<body>
+    <!-- Back Button -->
+    <a href=' /' class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Main Page
+    </a>
+
+    
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/account">Account</a>
+        <a href="#">Products</a>
+        <a href="/cart_section">Cart <i class="fa-solid fa-bag-shopping"></i><span id="cart-count"></span></a>
+
+       
+    </div>
+
+    <div class="shop-section" >
+         <div class="box female"  data-name="MAYBELLINE fit me pressed matte oily skin" data-price="199"
+         data-img="/static/img/bb1.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb1.jpg');"></div>
+                <p> MAYBELLINE fit me pressed matte oily skin</p>
+                <p class="price">199</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female" data-name=" Swiss Beauty Bold Matt Lip Liner | Long-lasting |Matte Finish | Non-drying" data-price="169" data-img="/static/img/bb2.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb2.jpg');"></div>
+                <p> Swiss Beauty Bold Matt Lip Liner | Long-lasting |Matte Finish | Non-drying</p>
+                <p class="price">169</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female" data-name="Swiss Beauty Liquid Light Weight Concealer With Full Coverage" data-price="199" data-img="/static/img/bb3.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb3.jpg');"></div>
+                <p>Swiss Beauty Liquid Light Weight Concealer With Full Coverage </p>
+                <p class="price">199</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+       
+        <div class="box female" data-name="Swiss Beauty Pure Matte Lipstick | Long Lasting, Hydrating & Lightweight" data-price="499" data-img="/static/img/bb4.jpg"> 
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb4.jpg');"></div>
+                <p>Swiss Beauty Pure Matte Lipstick | Long Lasting, Hydrating & Lightweight </p>
+                <p class="price">499</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female" data-name="LAKMÉ Eyeconic Insta Cool Kajal, Black, Cooling Kohl Liner With Cucumber" data-price="349" data-img="/static/img/bb5.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb5.jpg');"></div>
+                <p>LAKMÉ Eyeconic Insta Cool Kajal, Black, Cooling Kohl Liner With Cucumber</p>
+                <p class="price">349</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+       
+        <div class="box female" data-name="CORSULA Puffy 1Pc Spa Headband and 2 Wristbands Combo for Face Washing, Fuzzy Skincare Headbands for Women, Soft Makeup Skin Care Hair Accessories for Girls, Bubble Make Up Sleepover Party Supplies (Purple)" data-price="329" data-img="/static/img/newm1.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/newm1.jpg');"></div>
+                <p>CORSULA Puffy 1Pc Spa Headband and 2 Wristbands Combo for Face Washing, Fuzzy Skincare Headbands for Women, Soft Makeup Skin Care Hair Accessories for Girls, Bubble Make Up Sleepover Party Supplies (Purple)</p>
+                <p class="price">329</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        
+         <div class="box female" data-name="Lakme Lumi Cream - Face cream with Moisturizer + Highlighter" data-price="499" data-img="/static/img/bb7.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb7.jpg');"></div>
+                <p>Lakme Lumi Cream - Face cream with Moisturizer + Highlighter</p>
+                <p class="price">449</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female" data-name="Swiss Beauty Lip, Cheek And Eyeshadow Tint With Goodness Of Vitamin E" data-price="189" data-img="/static/img/bb8.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb8.jpg');"></div>
+                <p>Swiss Beauty Lip, Cheek And Eyeshadow Tint With Goodness Of Vitamin E </p>
+                <p class="price">189</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="Conscious Chemist® Pore Refining Brightening Face Wash with Niacinamide, BlueBerry & AcaiBerry Extracts | For Men & Women, Bright Clear Skin | Vegan & Cruelty Free | 100 ml" data-price="999" data-img="/static/img/newm2.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/newm2.jpg');"></div>
+                <p>Conscious Chemist® Pore Refining Brightening Face Wash with Niacinamide, BlueBerry & AcaiBerry Extracts | For Men & Women, Bright Clear Skin | Vegan & Cruelty Free | 100 ml</p>
+                <p class="price">999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         
+        
+         <div class="box male" data-name="Milagro Beauty Natural Underarm Gel with Papaya, Aloe Vera & Tomato Extracts" data-price="799" data-img="/static/img/bb10.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb10.jpg');"></div>
+                <p>Milagro Beauty Natural Underarm Gel with Papaya, Aloe Vera & Tomato Extracts </p>
+                <p class="price">799</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="box male" data-name=">HUDA GIRL BEAUTY Nude Edition Eyeshadow 18 Color Palette, Shimmer and Matte" data-price="699" data-img="/static/img/bb15.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb15.jpg');"></div>
+                <p>HUDA GIRL BEAUTY Nude Edition Eyeshadow 18 Color Palette, Shimmer and Matte</p>
+                <p class="price">699</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="WOW Skin Science Aloe Vera Multipurpose Beauty Gel for Skin and Hair, 250 ml" data-price="219" data-img="/static/img/bb12.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/b12.jpg');"></div>
+                <p>WOW Skin Science Aloe Vera Multipurpose Beauty Gel for Skin and Hair, 250 ml</p>
+                <p class="price">219</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="box male" data-name="Swiss Beauty Professional Blusher With Highly Blendable Shades | Pigmented Blusher" data-price="666" data-img="/static/img/bb13.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb13.jpg');"></div>
+                <p>Swiss Beauty Professional Blusher With Highly Blendable Shades | Pigmented Blusher</p>
+                <p class="price">666</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="SWISS BEAUTY Craze Tinted Lightweight Lip Balm|Lip Protection And Lip" data-price="1899" data-img="/static/img/bb14.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb14.jpg');"></div>
+                <p>SWISS BEAUTY Craze Tinted Lightweight Lip Balm|Lip Protection And Lip</p>
+                <p class="price">1899</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="Swiss Beauty Ultimate 9 Pigmented Colors Eyeshadow Palette Long Wearing" data-price="600" data-img="/static/img/bbb15.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bbb15.jpg');"></div>
+                <p>Swiss Beauty Ultimate 9 Pigmented Colors Eyeshadow Palette Long Wearing </p>
+                <p class="price">600</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="Maybelline New York Mascara, Curls Lashes, Highly Pigmented Colour" data-price="990" data-img="/static/img/bb16.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/bb16.jpg');"></div>
+                <p>Maybelline New York Mascara, Curls Lashes, Highly Pigmented Colour</p>
+                <p class="price">990</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        
+      
+    </div>
+    <footer>
+        <div class="foot-panel1" id="back-to-top">
+                       Back to Top
+            </div>
+    </footer>
+    
+    <script src="/static/js/cart.js"></script>
+   
+</body>
+</html>

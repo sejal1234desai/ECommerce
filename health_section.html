@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<style>footer{
+	margin-top: 15px;
+}
+.foot-panel1{
+	background-color: #37475a;
+	color: white;
+	height:50px;
+	display: flex;
+    justify-content: center;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    padding-top: 10px;
+	font-size: 1rem;
+
+}</style>
+
+<body>
+    <!-- Back Button -->
+    <a href="/" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Main Page
+    </a>
+    <!-- <input type="text" id="productSearchInput" placeholder="Search products"> -->
+    
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/account">Account</a>
+        <a href="#">Products</a>
+        <a href="#" onclick="showSection('all')">All</a>
+        <a href="#" onclick="showSection('female')">Female</a>
+        <a href="#" onclick="showSection('male')">Male</a>
+        <a href="/cart_section">Cart <i class="fa-solid fa-bag-shopping"></i><span id="cart-count"></span></a>
+    </div>
+
+    <div class="shop-section" >
+         <div class="box female" data-name=" PHILIPS BHH880/10 Hair Straightener" data-price="2916"
+         data-img="/static/img/h1w.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h1w.jpg');"></div>
+                <p>PHILIPS BHH880/10 Hair Straightener</p>
+                <p class="price">2,916</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female" data-name="PHILIPS HP8643/56 Hair Dryer(1000 W,Purple) " data-price="1751"
+         data-img="/static/img/h2w.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h2w.jpg');"></div>
+                <p> PHILIPS HP8643/56 Hair Dryer(1000 W,Purple)</p>
+                <p class="price">1,751</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female"data-name=" Gynoveda Women 14+ Iron folic Acid" data-price="311"
+        data-img="/static/img/h3w.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h3w.jpg');"></div>
+                <p>Gynoveda Women 14+ Iron folic Acid</p>
+                <p class="price">311</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female" data-name="Lakme Perfect Radiance Day Cream " data-price="599"
+        data-img="/static/img/h4w.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h4w.jpg');"></div>
+                <p>Lakme Perfect Radiance Day Cream</p>
+                <p class="price">599</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box female" data-name="WOW Onion Shampoo " data-price="699"
+        data-img="/static/img/h5w.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h5w.jpg');"></div>
+                <p>WOW Onion Shampoo</p>
+                <p class="price">699</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+       
+        <div class="box female" data-name="Head & Shoulder Shampoo " data-price="499"
+        data-img="/static/img/h6w.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h6w.jpg');"></div>
+                <p>Head & Shoulder Shampoo</p>
+                <p class="price">499</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        
+         <div class="box female" data-name=" Ensure Diabetes Care" data-price="799"
+         data-img="/static/img/h7w.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h7w.jpg');"></div>
+                <p>Ensure Diabetes Care</p>
+                <p class="price">799</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         <div class="box female" data-name="Cetaphil Facewash " data-price="349"
+         data-img="/static/img/h8w.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h8w.jpg');"></div>
+                <p>Cetaphil Facewash</p>
+                <p class="price">349</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+         
+        
+         <div class="box male" data-name="BELLAVITA Men Perfume " data-price="999"
+         data-img="/static/img/h1m.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h1m.jpg');"></div>
+                <p>BELLAVITA Men Perfume</p>
+                <p class="price">999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="GARNIER MEN Turbo Bright Facewash " data-price="399"
+        data-img="/static/img/h2m.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h2m.jpg');"></div>
+                <p>GARNIER MEN Turbo Bright Facewash</p>
+                <p class="price">399</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="DENVER Deo For Men " data-price="499"
+        data-img="/static/img/h3m.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h3m.jpg');"></div>
+                <p>DENVER Deo For Men</p>
+                <p class="price">499</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name=" PHILLIPS Trimmer" data-price="2999"
+        data-img="/static/img/h4m.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h4m.jpg');"></div>
+                <p>PHILLIPS Trimmer</p>
+                <p class="price">2999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="mamaearth Vitamin C Serum " data-price="349"
+        data-img="/static/img/h5m.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h5m.jpg');"></div>
+                <p>mamaearth Vitamin C Serum</p>
+                <p class="price">349</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name="The Man Skin Brighting Cream " data-price="999"
+        data-img="/static/img/h6m.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h6m.jpg');"></div>
+                <p>The Man Skin Brighting Cream</p>
+                <p class="price">999</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male" data-name="NIVEA MEN Facewash " data-price="299"
+        data-img="/static/img/h7m.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h7m.jpg');"></div>
+                <p>NIVEA MEN Facewash</p>
+                <p class="price">299</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box male"data-name=" Gillette MACH3" data-price="499"
+        data-img="/static/img/h8m.jpg">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('/static/img/h8m.jpg');"></div>
+                <p>Gillette MACH3</p>
+                <p class="price">499</p>
+                <button class="btn buy-btn">Buy</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+       
+    </div>
+    <footer>
+        <div class="foot-panel1" id="back-to-top">
+                       Back to Top
+            </div>
+    </footer>
+
+    <script src="/static/js/cart.js"></script>
+   
+</body>
+</html>

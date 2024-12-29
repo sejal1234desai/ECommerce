@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Amazon</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="/static/css/index.css">
+	</head>
+	<body>
+		<header>
+			<div class="navbar">
+				<div class="nav-logo border">
+					<div class="logo">
+						
+					</div>
+				</div>
+				<div class="nav-address border">
+					
+					<p class="add-fir">Deliver to</p>
+					<div class="add-icon">
+						<i class="fa-solid fa-location-dot"></i>
+						<p class="add-sec">India</p>
+					</div>
+				</div>
+				<div class="nav-search">
+					<select class="search-select">
+						<option>All</option>
+					</select>
+					<!-- <input  placeholder="Search Amazon"  class="search-input" > -->
+					<input type="text" id="productSearchInput" placeholder="Search products" class="search-input">
+
+					<div class="search-icon">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+				</div> 
+				
+				
+				<div class="nav-signin border">
+					<a href="login">
+
+					<!-- <p><span>Hello , sign in</span></p> -->
+					<p class="nav-sec">Hello ,<br>
+						 sign in </p></a>
+				</div> 
+				<!-- <div class="nav-return border">
+					<p><span>Returns</span></p>
+					<p class="nav-sec">& Orders </p>
+				</div> --> 
+				<div class="nav-ac border" >
+					
+					<a href="/account">
+						Account
+					</a>
+				</div>
+				<div class="nav-cart border">
+					<a href="cart_section" >
+					<i class="fa-solid fa-cart-shopping"></i>
+				
+				Cart</a>
+				</div>
+
+			</div>
+			<!-- /**************** Second Navbar********************/ -->
+			<!-- <div class="panel">
+				<div class="panel-all">
+					<i class="fa-solid fa-bars"></i>
+					All
+				</div>
+				<div class="panel-ops">
+					<p>Today's Deals</p>
+					<p>Customer Service</p>
+					<p>Registry</p>
+					<p>Gift Cards</p>
+					<p>Sell</p>
+				</div>
+				<div class="panel-deals"> 
+                  Shop deals in Electronics
+				</div>
+
+			</div>
+			 -->
+		</header>
+
+
+
+		<div class="hero-section">
+			<!-- <div class="hero-msg">
+				<p>You are on amazon.com , You can also shop on Amazon India for millions of products with fast local delivery. <a>Click here to go to amazon.in</a></p>
+			</div> -->
+			
+		</div>
+
+
+
+
+		<!-- /************Cart shop section************************/ -->
+
+
+		<div class="shop-section" >
+			<div class ="box2 box" >
+				<div class="box-content">
+					<h2>Clothes</h2>
+				<div class="box-img" style="background-image: url('/static/img/box1_image.jpg');"></div>
+				<a href="/cloth_section"><p>See more</p></a>
+			</div>
+		</div>
+
+			<div class ="box2 box" >
+				<div class="box-content">
+					<h2>Health & Personal Care</h2>
+				<div class="box-img" style="background-image: url('/static/img/box2_image.jpg');"></div>
+				<a href="/health_section"><p>See more</p></a>
+			</div>
+		</div>
+			<div class ="box3 box"  >
+				<div class="box-content">
+					<h2>Furniture</h2>
+				<div class="box-img" style="background-image: url('/static/img/box3_image.jpg');"></div>
+				<a href="/furniture_section"><p>See more</p></a>
+			</div>
+		</div>
+			<div class ="box4 box" >
+				<div class="box-content">
+					<h2>Electronics</h2>
+				<div class="box-img" style="background-image: url('/static/img/box4_image.jpg');"></div>
+				<a href="/electronic_section"><p>See more</p></a>
+			</div>
+		</div>
+
+
+		<div class ="box1 box" >
+				<div class="box-content">
+					<h2>Beauty Picks</h2>
+				<div class="box-img" style="background-image: url('/static/img/box5_image.jpg');"></div>
+				<a href="/beauty_section"><p>See more</p></a>
+				</div>
+			</div>
+			<div class ="box2 box">
+				<div class="box-content">
+					<h2>Pet Care</h2>
+				<div class="box-img" style="background-image: url('/static/img/box6_image.jpg');"></div>
+				<a href="petcare_section"><p>See more</p></a>
+			</div>
+		</div>
+			<div class ="box3 box" >
+				<div class="box-content">
+					<h2>New Arrival in Toys</h2>
+				<div class="box-img" style="background-image: url('/static/img/box7_image.jpg');"></div>
+				<a href="/toys_section"><p>See more</p></a>
+			</div>
+		</div>
+			<div class ="box4 box"  >
+				<div class="box-content">
+					<h2>Books</h2>
+				<div class="box-img" style="background-image: url('/static/img/boo1.jpg');"></div>
+				<a href="/book_section"><p>See more</p></a>
+			</div>
+		</div>
+
+
+		</div>
+
+
+
+
+
+
+		
+
+		<footer>
+			<div class="foot-panel1" id="back-to-top">
+				Back to Top
+				</div>
+		</footer>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const backToTopBtn = document.getElementById('back-to-top');
+			
+				backToTopBtn.addEventListener('click', () => {
+					window.scrollTo({
+						top: 0,
+						behavior: 'smooth'
+					});
+				});
+			});
+			</script>
+	
+</body>
+</html>
